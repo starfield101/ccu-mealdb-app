@@ -132,11 +132,10 @@ const addMealToDOM = function (meal) {
       ${meal.strCategory ? `<p><i>${meal.strArea}</i></p>` : ''}
     </div>
     <div class="main">
-    ${meal.strYoutube ? `<h4>This Recipe Has A YouTube Video </h4>` : ''}
-    ${
-      meal.strYoutube
-        ? `<div class="link"><a href=${meal.strYoutube}>YouTube</a></div>`
-        : ''
+    ${meal.strYoutube ? `<h4>This Recipe Has A YouTube Video! </h4>` : ''}
+    ${meal.strYoutube
+      ? `<div class="link"><a href=${meal.strYoutube}>YouTube</a></div>`
+      : ''
     }
     ${meal.strInstructions
       .split(';')
