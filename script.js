@@ -66,7 +66,6 @@ const searchMeal = async function (e) {
     const mealData3 = await getJSON(
       `https://www.themealdb.com/api/json/v1/1/filter.php?c=${term}`
     );
-    console.log(mealData3);
     if (mealData3.meals !== null) mealsArr.push(mealData3);
     // Filter by area
     const mealData4 = await getJSON(
